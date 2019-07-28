@@ -25,6 +25,7 @@ public class HelloServlet extends HttpServlet
     @Override
     protected void doGet( HttpServletRequest req, HttpServletResponse resp ) throws ServletException, IOException
     {
+        resp.setCharacterEncoding( "UTF-8" );
         resp.setLocale( Locale.forLanguageTag( "ru_RU" ) );
         //генерация html-контента
         resp.getWriter( ).print( PageFormGenerator.getPageHtmlMarkup( ) );

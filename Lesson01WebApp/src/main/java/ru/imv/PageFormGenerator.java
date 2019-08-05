@@ -25,7 +25,8 @@ public class PageFormGenerator
     private static String formHtml( )
     {
         StringBuilder html = new StringBuilder( );
-        html.append( "    <form action=\"post\">\n"
+        html.append( "    <form method=\"post\" "
+                     + " action=\"./process\">\n"
                      + "        <div>\n"
                      + "            <label>session-id:<input type=\"number\"></input></label>\n"
                      + "        </div>\n"

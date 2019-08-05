@@ -10,9 +10,20 @@
     <servlet-class>ru.imv.HelloServlet</servlet-class>
   </servlet>
 
+  <servlet>
+    <servlet-name>ProcessorServlet</servlet-name>
+    <servlet-class>ru.imv.ProcessorServlet</servlet-class>
+  </servlet>
+
   <servlet-mapping>
     <servlet-name>HelloServlet</servlet-name>
     <url-pattern>/servlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <http-method>POST</http-method>
+    <servlet-name>ProcessorServlet</servlet-name>
+    <url-pattern>/process</url-pattern>
   </servlet-mapping>
 
 </web-app>
